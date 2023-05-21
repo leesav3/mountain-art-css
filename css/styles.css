@@ -11,57 +11,81 @@ main {
     border: solid 2px #000;
     width: 75vw;
     height: 50vh;
-    z-index: 5;
+    position: relative;
+    display: inline-block;
 }
 
 #sky {
     width: 100%;
     height: 100%;
-    background-color: tan;
-    
 }
 
-#sky1 {
-    overflow: hidden;
+.main-sky {
     width: 100%;
     height: 20%;
     background-image: url('/images/striped-gray-wood.jpg');
     border: solid 1px #000;
+}
+
+#sky1 {
     box-shadow: inset 0 0 0 1000px rgba(0,86,96,.8);
 }
 
 #sky2 {
-    overflow: hidden;
-    width: 100%;
-    height: 20%;
-    background-image: url('/images/striped-gray-wood.jpg');
-    border: solid 1px #000;
     box-shadow: inset 0 0 0 1000px rgba(0,116,117,.8);
 }
 
 #sky3 {
-    overflow: hidden;
-    width: 100%;
-    height: 20%;
-    background-image: url('/images/striped-gray-wood.jpg');
-    border: solid 1px #000;
     box-shadow: inset 0 0 0 1000px rgba(0,128,129,.8);
 }
 
 #sky4 {
-    overflow: hidden;
-    width: 100%;
-    height: 20%;
-    background-image: url('/images/striped-gray-wood.jpg');
-    border: solid 1px #000;
     box-shadow: inset 0 0 0 1000px rgba(34,147,137,.8);
 }
 
 #sky5 {
-    overflow: hidden;
-    width: 100%;
-    height: 20%;
-    background-image: url('/images/striped-gray-wood.jpg');
-    border: solid 1px #000;
     box-shadow: inset 0 0 0 1000px rgba(52,167,152,.8);
 }
+
+.main-mtn {
+    background-image: url('/images/striped-gray-wood.jpg');
+    border: solid 1px #000;
+    position: absolute;
+    bottom: 0;
+}
+
+#mtn1 {
+    width: 250px;
+    height: 250px;
+    box-shadow: inset 0 0 0 1000px tan;
+    left: 0;
+    z-index: 2;
+} 
+
+#mtn2 {
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 0 0 0 1000px goldenrod;
+    left: 20%;
+    z-index: 1;
+} 
+
+#mtn3 {
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0 0 0 1000px brown;
+    bottom: 0;
+    left: 50%;
+    z-index: 0;
+} 
+
+#mtn4 {
+    background-image: url('/images/striped-gray-wood.jpg');
+    border: solid 1px #000;
+    width: 225px;
+    height: 225px;
+    box-shadow: inset 0 0 0 1000px darkgoldenrod;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+} 
