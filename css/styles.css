@@ -1,5 +1,8 @@
 /* wood grain image attribution: /* wood grain image attribution: <a href="https://www.freepik.com/free-photo/striped-gray-wood_1037575.htm#query=seamless%20wood%20pattern%20black%20white%20free&position=34&from_view=search&track=ais">Image by kues1</a> on Freepik */
+:root {
+    --test: box-shadow: inset 0 0 0 1000px rgba(210,180,140,0.8);
 
+}
 main {
     width: 100vw;
     height: 100vh;
@@ -8,8 +11,8 @@ main {
     align-items: center;
 }
 #container {
-    border: solid 2px #000;
-    width: 75vw;
+    border: solid 3px black;
+    width: 90vw;
     height: 50vh;
     position: relative;
     display: inline-block;
@@ -24,7 +27,6 @@ main {
     width: 100%;
     height: 20%;
     background-image: url('/images/striped-gray-wood.jpg');
-    border: solid 1px #000;
 }
 
 #sky1 {
@@ -48,46 +50,115 @@ main {
 }
 
 .main-mtn {
-    background-image: url('/images/striped-gray-wood.jpg');
-    border: solid 1px #000;
+    /*border-image-source: url('/images/striped-gray-wood.jpg');*/
     position: absolute;
     bottom: 0;
 }
 
-#mtn1 {
-    width: 250px;
-    height: 250px;
-    box-shadow: inset 0 0 0 1000px tan;
-    left: 0;
-    z-index: 2;
-} 
+.mtn1-up {
+    z-index: 3;
+    position: absolute;
+    transform: rotate(135deg);
+}
 
-#mtn1-1 { 
-  width: 0;
-  height: 350px; 
-  border: 40px solid;
-  border-left-color: red;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  transform: rotate(45deg);
-  bottom: -80px;
-  left: 110px;
-  position: absolute;   
+.mtn1-down {
+    z-index: 3;
+    position: absolute;
+    transform: rotate(-135deg);
+}
+
+#mtn1-1 {
+    background-image: url('/images/striped-gray-wood.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+    width: 350px;
+    height: 40px;
+    bottom: 24%;
+    left: -35px;
+    clip-path: polygon(11.43% 0%, 88.57% 0%, 100% 100%, 0% 100%);
 }
 
 #mtn1-2 {
-  width: 0;
-  height: 350px; 
-  border: 40px solid;
-  border-left-color: transparent;
-  border-right-color: red;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  transform: rotate(-45deg);
-  bottom: -80px;
-  left: 300px;
-  position: absolute;  
+    background-image: url('/images/striped-gray-wood.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+    width: 350px; 
+    height: 40px;
+    bottom: 24%;
+    left: 183px;
+    clip-path: polygon(11.43% 0%, 88.57% 0%, 100% 100%, 0% 100%);
+}
+
+#mtn1-3 { 
+    background-image: url('/images/striped-gray-wood.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
+    width: 270px; 
+    height: 40px;
+    bottom: 61px;
+    left: 33px;
+    clip-path: polygon(14.81% 0%, 85.19% 0%, 100% 100%, 0% 100%);
+}
+
+#mtn1-4 {
+    background-image: url('/images/striped-gray-wood.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
+    width: 270px;
+    height: 40px;
+    bottom: 61px; 
+    left: 195px;
+    clip-path: polygon(14.81% 0%, 85.19% 0%, 100% 100%, 0% 100%);
+}
+
+#mtn1-5 { 
+    background-image: url('/images/striped-gray-wood.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+    width: 190px;
+    height: 40px; 
+    bottom: 33px;
+    left: 100px;
+    clip-path: polygon(21.05% 0%, 78.95% 0%, 100% 100%, 0% 100%);
+}
+  
+#mtn1-6 {
+    background-image: url('/images/striped-gray-wood.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+    width: 190px;
+    height: 40px; 
+    bottom: 33px;
+    left: 206px;
+    clip-path: polygon(21.05% 0%, 78.95% 0%, 100% 100%, 0% 100%);
+}
+
+#mtn1-7 { 
+    background-image: url('/images/striped-gray-wood.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
+    width: 110px;
+    height: 40px; 
+    bottom: 5px;
+    left: 168px;
+    clip-path: polygon(36% 0%, 64% 0%, 100% 100%, 0% 100%);
+    
+}
+  
+#mtn1-8 {
+    background-image: url('/images/striped-gray-wood.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
+    width: 110px;
+    height: 40px; 
+    bottom: 5px;
+    left: 217px;
+    clip-path: polygon(36% 0%, 64% 0%, 100% 100%, 0% 100%);
+}
+
+#mtn1-9 {
+    z-index: 2;
+    position: absolute;
+    transform: rotate(90deg);
+    background-image: url('/images/striped-gray-wood.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+    width: 75px;
+    height: 40px; 
+    bottom: 18px;
+    left: 210px;
+    /*clip-path: polygon(21.05% 0%, 78.95% 0%, 100% 100%, 0% 100%);*/
 }
 
 #mtn2 {
