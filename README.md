@@ -9,7 +9,7 @@ This is a project inspired by a freeCodeCamp project 'Learn Intermediate CSS by 
 <img width="1143" alt="css-art-screenshot" src="https://github.com/leesav3/mountain-art-css/assets/23065327/8149a72b-6689-4051-b873-ae1524cdcb99">
 
 ### Link
-*
+* https://leesav3.github.io/mountain-art-css/
 
 ### My Process
 * Built with HTML `<div>`'s and CSS
