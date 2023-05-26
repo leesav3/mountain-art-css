@@ -1,15 +1,39 @@
 /* wood grain image attribution: /* wood grain image attribution: <a href="https://www.freepik.com/free-photo/striped-gray-wood_1037575.htm#query=seamless%20wood%20pattern%20black%20white%20free&position=34&from_view=search&track=ais">Image by kues1</a> on Freepik */
 :root {
-    --test: box-shadow: inset 0 0 0 1000px rgba(210,180,140,0.8);
-
+   --wood: url('/images/striped-gray-wood.jpg');
+   --yellow: rgba(232, 222, 42, 0.7);
+   --sky1: rgba(0,86,96,.8);
+   --sky2: rgba(0,100,106,.8);
+   --sky3: rgba(0,116,117,.8);
+   --sky4: rgba(0,121,120,.8);
+   --sky5: rgba(0,128,129,.8);
+   --sky6: rgba(17,137,132,.8);
+   --sky7: rgba(34,147,137,.8);
+   --sky8: rgba(43,157,145,.8);
+   --sky9: rgba(52,167,152,.8);
+   --sky10: rgba(67,178,167,.8);
+   --light-tan: rgba(177,98,46,.7);
+   --med-tan: rgba(133, 70, 31, 0.7);
+   --dark-tan: rgba(104, 45, 22, 0.7);
 }
+
 main {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.header {
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
 #container {
     border: solid 3px black;
     width: 90vw;
@@ -19,6 +43,8 @@ main {
     overflow: hidden;
 }
 
+/* sky */
+
 #sky {
     width: 100%;
     height: 100%;
@@ -27,424 +53,385 @@ main {
 .main-sky {
     width: 100%;
     height: 10%;
-    background-image: url('/images/striped-gray-wood.jpg');
+    background-image: var(--wood);
+}
+
+.t180 {
+    transform: rotate(180deg);
 }
 
 #sky1 {
-    box-shadow: inset 0 0 0 1000px rgba(0,86,96,.8);
+    box-shadow: inset 0 0 0 1000px var(--sky1);
 }
 
 #sky2 {
-    box-shadow: inset 0 0 0 1000px rgba(0,100,106,.8);
-    transform: rotate(180deg);
+    box-shadow: inset 0 0 0 1000px var(--sky2);
 }
 
 #sky3 {
-    box-shadow: inset 0 0 0 1000px rgba(0,116,117,.8);
+    box-shadow: inset 0 0 0 1000px var(--sky3);
 }
 
 #sky4 {
-    box-shadow: inset 0 0 0 1000px rgba(0,121,120,.8);
-    transform: rotate(180deg);
+    box-shadow: inset 0 0 0 1000px var(--sky4);
 }
 
 #sky5 {
-    box-shadow: inset 0 0 0 1000px rgba(0,128,129,.8);
+    box-shadow: inset 0 0 0 1000px var(--sky5);
 }
 
 #sky6 {
-    box-shadow: inset 0 0 0 1000px rgba(17,137,132,.8);
-    transform: rotate(180deg);
+    box-shadow: inset 0 0 0 1000px var(--sky6);
 }
 
 #sky7 {
-    box-shadow: inset 0 0 0 1000px rgba(34,147,137,.8);
+    box-shadow: inset 0 0 0 1000px var(--sky7);
 }
 
 #sky8 {
-    box-shadow: inset 0 0 0 1000px rgba(43,157,145,.8);
-    transform: rotate(180deg);
+    box-shadow: inset 0 0 0 1000px var(--sky8);
 }
 
 #sky9 {
-    box-shadow: inset 0 0 0 1000px rgba(52,167,152,.8);
+    box-shadow: inset 0 0 0 1000px var(--sky9);
 }
 
 #sky10 {
-    box-shadow: inset 0 0 0 1000px rgba(67,178,167,.8);
-    transform: rotate(180deg);
+    box-shadow: inset 0 0 0 1000px var(--sky10);
 }
+
+/* all mountain */
+
+.mtn-up {
+    transform: rotate(135deg);
+}
+
+.mtn-down {
+    transform: rotate(-135deg);
+}
+
+/* mountain 1 */
 
 .mtn1 {
     position: absolute;
     z-index: 3;
 }
 
-.mtn1-up {
-    transform: rotate(135deg);
-}
-
-.mtn1-down {
-    transform: rotate(-135deg);
-}
-#mtn4 {
-    position: absolute;
-}
-#mtn1-1 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+.m1-strip1 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--light-tan);
+    clip-path: polygon(11.43% 0%, 88.57% 0%, 100% 100%, 0% 100%);
     width: 350px;
     height: 40px;
     bottom: 89px;
+}
+
+#mtn1-strip1a {
     left: -35px;
-    clip-path: polygon(11.43% 0%, 88.57% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn1-2 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
-    width: 350px; 
-    height: 40px;
-    bottom: 89px;
+#mtn1-strip1b {
     left: 183px;
-    clip-path: polygon(11.43% 0%, 88.57% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn1-3 { 
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
+.m1-strip2 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--med-tan);
+    clip-path: polygon(14.81% 0%, 85.19% 0%, 100% 100%, 0% 100%);
     width: 270px; 
     height: 40px;
     bottom: 61px;
+}
+
+#mtn1-strip2a { 
     left: 33px;
-    clip-path: polygon(14.81% 0%, 85.19% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn1-4 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
-    width: 270px;
-    height: 40px;
-    bottom: 61px; 
+#mtn1-strip2b {
     left: 195px;
-    clip-path: polygon(14.81% 0%, 85.19% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn1-5 { 
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+.m1-strip3 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--light-tan);
+    clip-path: polygon(21.05% 0%, 78.95% 0%, 100% 100%, 0% 100%);
     width: 190px;
     height: 40px; 
     bottom: 33px;
+}
+
+#mtn1-strip3a { 
     left: 100px;
-    clip-path: polygon(21.05% 0%, 78.95% 0%, 100% 100%, 0% 100%);
 }
   
-#mtn1-6 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
-    width: 190px;
-    height: 40px; 
-    bottom: 33px;
+#mtn1-strip3b {
     left: 206px;
-    clip-path: polygon(21.05% 0%, 78.95% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn1-7 { 
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
+.m1-strip4 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--dark-tan);
+    clip-path: polygon(36% 0%, 64% 0%, 100% 100%, 0% 100%);
     width: 110px;
     height: 40px; 
     bottom: 5px;
+}
+
+#mtn1-strip4a { 
     left: 168px;
-    clip-path: polygon(36% 0%, 64% 0%, 100% 100%, 0% 100%);
-    
 }
   
-#mtn1-8 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
-    width: 110px;
-    height: 40px; 
-    bottom: 5px;
+#mtn1-strip4b {
     left: 217px;
-    clip-path: polygon(36% 0%, 64% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn1-9 {
+#mtn1-middle {
     z-index: 2;
     position: absolute;
     transform: rotate(90deg);
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--med-tan);
     width: 75px;
     height: 40px; 
     bottom: 23px;
     left: 210px;
 }
 
+/* mountain 2 */
+
 .mtn2 {
     position: absolute;
     z-index: 2;
 }
 
-#mtn2-1 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
+.m2-strip1 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--dark-tan);
+    clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
     width: 500px;
     height: 40px;
     bottom: 142px;
+}
+
+#mtn2-strip1a { 
     left: 125px;
-    clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn2-2 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
-    width: 500px; 
-    height: 40px;
-    bottom: 142px;
+#mtn2-strip1b {
     left: 446px;
-    clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn2-3 { 
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
+.m2-strip2 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--med-tan);
+    clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 100%, 0% 100%);
     width: 420px; 
     height: 40px;
     bottom: 114px;
-    left: 192px;
-    clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn2-4 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
-    width: 420px;
-    height: 40px;
-    bottom: 114px; 
+#mtn2-strip2a { 
+    left: 192px; 
+}
+
+#mtn2-strip2b { 
     left: 458px;
-    clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn2-5 { 
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+.m2-strip3 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--light-tan);
+    clip-path: polygon(12% 0%, 88% 0%, 100% 100%, 0% 100%);
     width: 340px;
     height: 40px; 
     bottom: 86px;
+}
+
+#mtn2-strip3a { 
     left: 260px;
-    clip-path: polygon(12% 0%, 88% 0%, 100% 100%, 0% 100%);
 }
   
-#mtn2-6 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
-    width: 340px;
-    height: 40px; 
-    bottom: 86px;
+#mtn2-strip3b {
     left: 470px;
-    clip-path: polygon(12% 0%, 88% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn2-7 { 
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
+.m2-strip4 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--dark-tan);
+    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
     width: 260px;
     height: 40px; 
     bottom: 58px;
+}
+
+#mtn2-strip4a { 
     left: 328px;
-    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
 }
   
-#mtn2-8 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
-    width: 260px;
-    height: 40px; 
-    bottom: 58px;
+#mtn2-strip4b {
     left: 482px;
-    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn2-9 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
-    width: 180px;
-    height: 40px; 
-    bottom: 29px;
-    left: 396px;
+.m2-strip5 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--light-tan);
     clip-path: polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%);
-}
-
-#mtn2-10 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
     width: 180px;
     height: 40px; 
     bottom: 29px;
+}
+
+#mtn2-strip5a {   
+    left: 396px;  
+}
+
+#mtn2-strip5b {
     left: 495px;
-    clip-path: polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn2-11 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
+.m2-strip6 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--med-tan);
+    clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
     width: 100px;
     height: 40px; 
     bottom: 1px;
+}
+
+#mtn2-strip6a {
     left: 464px;
-    clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn2-12 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
-    width: 100px;
-    height: 40px; 
-    bottom: 1px;
+#mtn2-strip6b {
     left: 507px;
-    clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
 }
 
-#mtn2-13 {
+#mtn2-middle {
     z-index: 1;
     position: absolute;
     transform: rotate(90deg);
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--light-tan);
     width: 75px;
     height: 40px; 
     bottom: 17px;
     left: 492px;
 }
 
+/* mountain 3 */
+
 .mtn3 {
     position: absolute;
     z-index: 4;
 }
 
-#mtn3-1 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+.m3-strip1 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--light-tan);
+    clip-path: polygon(13.44% 0%, 86.67% 0%, 100% 100%, 0% 100%);
     width: 300px;
     height: 40px;
     bottom: 72px;
-    left: 650px;
-    clip-path: polygon(13.44% 0%, 86.67% 0%, 100% 100%, 0% 100%);
+}
+
+#mtn3-strip1a {
+    left: 650px;  
 } 
 
-#mtn3-2 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
-    width: 300px;
-    height: 40px;
-    bottom: 72px;
+#mtn3-strip1b {
     left: 832px;
-    clip-path: polygon(13.44% 0%, 86.67% 0%, 100% 100%, 0% 100%);
 } 
 
-#mtn3-3 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
+.m3-strip2 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--med-tan);
+    clip-path: polygon(18% 0%, 82% 0%, 100% 100%, 0% 100%);
     width: 220px;
     height: 40px;
     bottom: 43px;
+}
+
+#mtn3-strip2a {
     left: 718px;
-    clip-path: polygon(18% 0%, 82% 0%, 100% 100%, 0% 100%);
 } 
 
-#mtn3-4 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
-    width: 220px;
-    height: 40px;
-    bottom: 43px;
+#mtn3-strip2b {
     left: 844px;
-    clip-path: polygon(18% 0%, 82% 0%, 100% 100%, 0% 100%);
 } 
 
-#mtn3-5 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
+.m3-strip3 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--dark-tan);
+    clip-path: polygon(28.58% 0%, 71.42% 0%, 100% 100%, 0% 100%);
     width: 140px;
     height: 40px;
     bottom: 14px;
+}
+
+#mtn3-strip3a {
     left: 786px;
-    clip-path: polygon(28.58% 0%, 71.42% 0%, 100% 100%, 0% 100%);
 } 
 
-#mtn3-6 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
-    width: 140px;
-    height: 40px;
-    bottom: 14px;
+#mtn3-strip3b {
     left: 856px;
-    clip-path: polygon(28.58% 0%, 71.42% 0%, 100% 100%, 0% 100%);
 } 
 
-#mtn3-7 {
+#mtn3-middle {
     z-index: 2;
     position: absolute;
     transform: rotate(90deg);
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--light-tan);
     width: 75px;
     height: 75px; 
     bottom: 0px;
     left: 855px;
 } 
 
+/* mountain 4 */
+
 .mtn4 {
     position: absolute;
     z-index: 1;
 }
 
-#mtn4-1 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
+.m4-strip1 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--med-tan);
+    clip-path: polygon(17.8% 0%, 82.2% 0%, 100% 100%, 0% 100%);
     width: 225px;
     height: 40px;
     bottom: 45px;
+}
+
+#mtn4-strip1a {
     left: 950px;
-    clip-path: polygon(17.8% 0%, 82.2% 0%, 100% 100%, 0% 100%);
 } 
 
-#mtn4-2 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(177,98,46,.7);
-    width: 225px;
-    height: 40px;
-    bottom: 45px;
+#mtn4-strip1b {
     left: 1081px;
-    clip-path: polygon(17.8% 0%, 82.2% 0%, 100% 100%, 0% 100%);
 } 
 
-#mtn4-3 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
+.m4-strip2 {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--dark-tan);
+    clip-path: polygon(27.9% 0%, 72.41% 0%, 100% 100%, 0% 100%);
     width: 145px;
     height: 40px;
     bottom: 17px;
+}   
+
+#mtn4-strip2a {
     left: 1019px;
-    clip-path: polygon(27.9% 0%, 72.41% 0%, 100% 100%, 0% 100%);
 } 
 
-#mtn4-4 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(133, 70, 31, 0.7);
-    width: 145px;
-    height: 40px;
-    bottom: 17px;
+#mtn4-strip2b {
     left: 1093px;
-    clip-path: polygon(27.9% 0%, 72.41% 0%, 100% 100%, 0% 100%);
 } 
 
-#mtn4-5 {
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(104, 45, 22, 0.7);
+#mtn4-middle {
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--light-tan);
     width: 87px;
     height: 87px;
     bottom: 0px;
@@ -453,12 +440,14 @@ main {
     z-index: 0;
 }
 
+/* sun */
+
 #sun {
     width: 200px;
     height: 200px;
     position: absolute;
-    background-image: url('/images/striped-gray-wood.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(232, 222, 42, 0.7);
+    background-image: var(--wood);
+    box-shadow: inset 0 0 0 1000px var(--yellow);
     z-index: 0;
     right: 20%;
     top: 5%;
